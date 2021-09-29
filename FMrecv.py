@@ -73,7 +73,7 @@ class FMrecv(gr.top_block, Qt.QWidget):
         ##################################################
         # Variables
         ##################################################
-        self.samp_rate = samp_rate = 4e6
+        self.samp_rate = samp_rate = 2e6
 
         ##################################################
         # Blocks
@@ -86,7 +86,7 @@ class FMrecv(gr.top_block, Qt.QWidget):
         self.qtgui_sink_x_0 = qtgui.sink_c(
             1024, #fftsize
             firdes.WIN_BLACKMAN_hARRIS, #wintype
-            93.1e6, #fc
+            89.1e6, #fc
             20e6, #bw
             "", #name
             True, #plotfreq
@@ -105,15 +105,15 @@ class FMrecv(gr.top_block, Qt.QWidget):
         )
         self.osmosdr_source_0.set_time_unknown_pps(osmosdr.time_spec_t())
         self.osmosdr_source_0.set_sample_rate(samp_rate)
-        self.osmosdr_source_0.set_center_freq(93.1e6, 0)
+        self.osmosdr_source_0.set_center_freq(89.1e6, 0)
         self.osmosdr_source_0.set_freq_corr(0, 0)
-        self.osmosdr_source_0.set_gain(0, 0)
+        self.osmosdr_source_0.set_gain(20, 0)
         self.osmosdr_source_0.set_if_gain(20, 0)
         self.osmosdr_source_0.set_bb_gain(20, 0)
         self.osmosdr_source_0.set_antenna('', 0)
         self.osmosdr_source_0.set_bandwidth(0, 0)
         self.low_pass_filter_0 = filter.fir_filter_ccf(
-            20,
+            10,
             firdes.low_pass(
                 1,
                 samp_rate,

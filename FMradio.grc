@@ -27,7 +27,7 @@ options:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [18, 10]
+    coordinate: [189, 129]
     rotation: 0
     state: enabled
 
@@ -36,12 +36,12 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 4e6
+    value: 2e6
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [36, 150]
+    coordinate: [192, 220]
     rotation: 0
     state: enabled
 - name: analog_wfm_rcv_1
@@ -58,7 +58,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1309, 176]
+    coordinate: [1033, 202]
     rotation: 0
     state: true
 - name: audio_sink_0
@@ -75,7 +75,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1369, 392]
+    coordinate: [958, 450]
     rotation: 0
     state: true
 - name: dc_blocker_xx_0
@@ -93,7 +93,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [632, 197]
+    coordinate: [502, 369]
     rotation: 0
     state: true
 - name: low_pass_filter_0
@@ -104,7 +104,7 @@ blocks:
     beta: '6.76'
     comment: ''
     cutoff_freq: '75000'
-    decim: '20'
+    decim: '10'
     gain: '1'
     interp: '1'
     maxoutbuf: '0'
@@ -117,7 +117,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [824, 54]
+    coordinate: [577, 168]
     rotation: 0
     state: true
 - name: osmosdr_source_0
@@ -295,7 +295,7 @@ blocks:
     dc_offset_mode7: '0'
     dc_offset_mode8: '0'
     dc_offset_mode9: '0'
-    freq0: 93.1e6
+    freq0: 89.1e6
     freq1: 100e6
     freq10: 100e6
     freq11: 100e6
@@ -327,7 +327,7 @@ blocks:
     freq7: 100e6
     freq8: 100e6
     freq9: 100e6
-    gain0: '0'
+    gain0: '20'
     gain1: '10'
     gain10: '10'
     gain11: '10'
@@ -474,7 +474,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [305, 125]
+    coordinate: [196, 297]
     rotation: 0
     state: true
 - name: qtgui_sink_x_0
@@ -484,7 +484,7 @@ blocks:
     alias: ''
     bw: 20e6
     comment: ''
-    fc: 93.1e6
+    fc: 89.1e6
     fftsize: '1024'
     gui_hint: ''
     maxoutbuf: '0'
@@ -503,7 +503,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [839, 353]
+    coordinate: [660, 451]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -523,7 +523,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1099, 78]
+    coordinate: [807, 186]
     rotation: 0
     state: true
 
